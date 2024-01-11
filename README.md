@@ -1,8 +1,10 @@
 # 23-2 Ewha Womans University Computer Graphics
 
 ### learnopengl.com code repository
+
 Contains code samples for all chapters of Learn OpenGL and [https://learnopengl.com](https://learnopengl.com).
 
+---
 ### ✏️소개
 1.RobotArm
    1. Display_RobotArm
@@ -36,9 +38,7 @@ Contains code samples for all chapters of Learn OpenGL and [https://learnopengl.
     - 구 외에 다른 물체(정육면체) 구현
     - light source 정의
     - ambient, diffuse 구현, specular 구현 x
- 
 ---
-
 ### 🖱️빌드 방법
 1. Cmake 설치
 2. 코드 Clone 또는 Zip 파일 다운 후 압축 풀기
