@@ -1,4 +1,4 @@
-# 23-2 Ewha Womans University Computer Graphics
+## 23-2 Ewha Womans University Computer Graphics
 
 ### learnopengl.com code repository
 
