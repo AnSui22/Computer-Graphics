@@ -1,49 +1,21 @@
-# learnopengl.com code repository
-Contains code samples for all chapters of Learn OpenGL and [https://learnopengl.com](https://learnopengl.com). 
+## 23-2 Ewha Womans University Computer Graphics
+기본 코드는 김영준 교수님의 과제 코드이고 수정한 부분은 제가 작성한 부분입니다.
 
-## Windows building
-All relevant libraries are found in /libs and all DLLs found in /dlls (pre-)compiled for Windows. 
-The CMake script knows where to find the libraries so just run CMake script and generate project of choice.
 
-Keep in mind the supplied libraries were generated with a specific compiler version which may or may not work on your system (generating a large batch of link errors). In that case it's advised to build the libraries yourself from the source.
+## learnopengl.com code repository
+Contains code samples for all chapters of Learn OpenGL and [https://learnopengl.com](https://learnopengl.com).
 
-## Linux building
-First make sure you have CMake, Git, and GCC by typing as root (sudo) `apt-get install g++ cmake git` and then get the required packages:
-Using root (sudo) and type `apt-get install libsoil-dev libglm-dev libassimp-dev libglew-dev libglfw3-dev libxinerama-dev libxcursor-dev  libxi-dev libfreetype-dev libgl1-mesa-dev xorg-dev` .
 
-**Build through CMake-gui:** The source directory is LearnOpenGL and specify the build directory as LearnOpenGL/build. Creating the build directory within LearnOpenGL is important for linking to the resource files (it also will be ignored by Git). Hit configure and specify your compiler files (Unix Makefiles are recommended), resolve any missing directories or libraries, and then hit generate. Navigate to the build directory (`cd LearnOpenGL/build`) and type `make` in the terminal. This should generate the executables in the respective chapter folders.
+---
 
-**Build through Cmake command line:**
-```
-cd /path/to/LearnOpenGL
-mkdir build && cd build
-cmake ..
-cmake --build .
-```
-
-Note that CodeBlocks or other IDEs may have issues running the programs due to problems finding the shader and resource files, however it should still be able to generate the executables. To work around this problem it is possible to set an environment variable to tell the tutorials where the resource files can be found. The environment variable is named LOGL_ROOT_PATH and may be set to the path to the root of the LearnOpenGL directory tree. For example:
-
-    `export LOGL_ROOT_PATH=/home/user/tutorials/LearnOpenGL`
-
-Running `ls $LOGL_ROOT_PATH` should list, among other things, this README file and the resources directory.
-
-## Mac OS X building
-Building on Mac OS X is fairly simple:
-```
-brew install cmake assimp glm glfw freetype
-cmake -S . -B build
-cmake --build build -j$(sysctl -n hw.logicalcpu)
-```
-## Create Xcode project on Mac platform
-Thanks [@caochao](https://github.com/caochao):
-After cloning the repo, go to the root path of the repo, and run the command below:
-```
-mkdir xcode
-cd xcode
-cmake -G Xcode ..
-```
-
-## Glitter
-Polytonic created a project called [Glitter](https://github.com/Polytonic/Glitter) that is a dead-simple boilerplate for OpenGL. 
-Everything you need to run a single LearnOpenGL Project (including all libraries) and just that; nothing more. 
-Perfect if you want to follow along with the chapters, without the hassle of having to manually compile and link all third party libraries!
+## 빌드 방법
+1. Cmake 설치
+2. 코드 Clone 또는 Zip 파일 다운 후 압축 풀기
+3. 다운받은 폴더 안에 build 폴더 생성
+4. Cmake gui 사용
+   - Where is the source code: 폴더명
+   - Where is the build code: 폴더/build
+5. Configure -> Generate
+6. build 폴더에 들어가서 sln 파일 실행
+7. 원하는 파일 시작프로젝트로 설정
+8. 실행
