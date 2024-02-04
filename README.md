@@ -8,7 +8,7 @@
 ### ✏️소개
 **1.RobotArm**
 
-   **1. Display_RobotArm**
+   **1.1 Display_RobotArm**
       
     - RobotArm, Teapot(img), Wood 바닥(img) 구현
     - 키보드 클릭 후 왼쪽 마우스 드래그로 RobotArm 이동
@@ -18,23 +18,24 @@
        4 클릭 -> 왼쪽 마우스로 RobotArm 머리 부분 움직이기
        5 클릭 -> 왼쪽 마우스로 RobotArm 집게 부분 움직이기
 
-   **2. Camera_Interface**
+   **1.2 Camera_Interface**
 
     - 오른쪽 마우스 드래그로 카메라가 보는 방향 이동
     - W, S, A, D 키로 카메라 위치를 상하좌우로 이동
     
 
-   **3. Render_Own_Model**
+   **1.3 Render_Own_Model**
 
     - Teapot model 대신 Zephyr 사용
 
-   **4. PointLight_and_SpotLight**
+   **1.4 PointLight_and_SpotLight**
 
     - Blinn-Phong illumination을 이용한 radial and angular attenuation 구현
     - L키 클릭 -> angular attenuation   
 
-**2.Simple_Raytracer**
-   **1. Raytracing**
+**2. Simple_Raytracer**
+
+   **2.1 Raytracing**
 
     - 구 외에 다른 물체(정육면체) 구현
     - light source 정의
