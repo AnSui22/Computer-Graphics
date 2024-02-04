@@ -1,10 +1,10 @@
-## 23-2 Ewha Womans University "Computer Graphics"
+## Computer Graphics 과제
+##### 23-2 Ewha Womans University 
 
-### learnopengl.com code repository
-
-Contains code samples for all chapters of Learn OpenGL and [https://learnopengl.com](https://learnopengl.com).
+##### 김영준 교수님 - Computer Graphics
 
 ---
+
 ### ✏️소개
 **1.RobotArm**
 
@@ -51,3 +51,8 @@ Contains code samples for all chapters of Learn OpenGL and [https://learnopengl.
 6. build 폴더에 들어가서 sln 파일 실행
 7. 원하는 파일 시작프로젝트로 설정
 8. 실행
+
+---
+### learnopengl.com code repository
+
+Contains code samples for all chapters of Learn OpenGL and [https://learnopengl.com](https://learnopengl.com).
